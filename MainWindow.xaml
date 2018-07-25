@@ -5,19 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WinDbgCourse"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-        <Button Grid.Row="0" Command="{Binding BasicNullRefCrashCommand}" Content="Basic Null Reference Crash"/>
+        <TextBlock Grid.Row="0" TextAlignment="Center" VerticalAlignment="Center">Part 1</TextBlock>
+        <Button Grid.Row="1" Command="{Binding BasicNullRefCrashCommand}" Content="Basic Null Reference Crash"/>
+        <TextBlock Grid.Row="2" TextAlignment="Center" VerticalAlignment="Center">Part 2</TextBlock>
+        <Button Grid.Row="3" Command="{Binding IncorrectlyHandledCrashCommand}" Content="Incorrectly Handled Crash"/>
+        <Button Grid.Row="4" Command="{Binding CorrectlyHandledCrashCommand}" Content="Correctly Handled Crash"/>
+        <Button Grid.Row="5" Command="{Binding UnreliableMessageBoxCommand}" Content="Unreliable Message Box"/>
+        <Button Grid.Row="6" Command="{Binding IncorrectNestedException}" Content="Incorrect Nested Exception"/>
+        <Button Grid.Row="7" Command="{Binding CorrectNestedException}" Content="Correct Nested Exception"/>
     </Grid>
 </Window>

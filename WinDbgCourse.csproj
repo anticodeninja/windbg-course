@@ -48,6 +48,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="NestedExceptionCommand.cs" />
+    <Compile Include="UnreliableMessageBoxCommand.cs" />
+    <Compile Include="HandleCrashCommand.cs" />
     <Compile Include="MainViewModel.cs" />
     <Compile Include="BasicNullRefCrashCommand.cs" />
     <Page Include="MainWindow.xaml">

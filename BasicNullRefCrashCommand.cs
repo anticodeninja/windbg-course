@@ -12,7 +12,7 @@
 
         public void Execute(object parameter)
         {
-            MessageBox.Show(Application.Current.MainWindow, (Application.Current.MainWindow.DataContext as MainWindow).Title, parameter.ToString());
+            MessageBox.Show(Application.Current.MainWindow, parameter.ToString(), (Application.Current.MainWindow.DataContext as MainWindow).Title);
         }
     }
 }
